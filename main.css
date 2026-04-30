@@ -38,6 +38,8 @@
   --txt-faint:       #9aabcc;
 
   /* Column accent colours */
+  --c-outgoing:      #0e6e8a;
+  --c-predictive:    #7c3aed;
   --c-touch:         #0046c8;
   --c-connected:     #007a38;
   --c-ptp-cnt:       #a06c10;
@@ -502,6 +504,16 @@ th.sortable:hover { background: rgba(255,255,255,.05); color: rgba(255,255,255,.
 th.sort-asc,
 th.sort-desc { background: rgba(200,151,42,.14); color: #e8c46a; }
 
+th.th-outgoing { background: rgba(14,110,138,.25); }
+th.th-outgoing.sortable:hover,
+th.th-outgoing.sort-asc,
+th.th-outgoing.sort-desc { background: rgba(14,110,138,.4); }
+
+th.th-predictive { background: rgba(124,58,237,.2); }
+th.th-predictive.sortable:hover,
+th.th-predictive.sort-asc,
+th.th-predictive.sort-desc { background: rgba(124,58,237,.35); }
+
 th.th-ptp  { background: rgba(0,20,70,.6); }
 th.th-ptp.sortable:hover,
 th.th-ptp.sort-asc,
@@ -557,6 +569,8 @@ td:first-child { font-weight: 600; color: var(--txt-h); }
 
 /* Numeric badges */
 .num { font-family: var(--mono); font-weight: 500; font-size: .81rem; }
+.num-outgoing   { color: var(--c-outgoing); }
+.num-predictive { color: var(--c-predictive); }
 .num-touch      { color: var(--c-touch); }
 .num-connected  { color: var(--c-connected); }
 .num-ptp-count  { color: var(--c-ptp-cnt); }
