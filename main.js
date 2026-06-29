@@ -324,7 +324,7 @@ function renderTable() {
 
   tableBody.innerHTML = filtered.map((r, i) => `
     <tr>
-      <td><span class="row-idx">${i + 1}</span>${escHtml(r.name)}</td>
+      <td>${escHtml(r.name)}</td>
       <td class="col-num"><span class="num num-outgoing">${r.outgoingCall.toLocaleString()}</span></td>
       <td class="col-num"><span class="num num-predictive">${r.predictiveCall.toLocaleString()}</span></td>
       <td class="col-num"><span class="num num-touch">${r.touchAccounts.toLocaleString()}</span></td>
